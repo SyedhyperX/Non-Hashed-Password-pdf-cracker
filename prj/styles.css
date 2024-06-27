@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    background-image: linear-gradient(45deg, #090 25%, transparent 25%, transparent 75%, #090 75%, #090 100%), linear-gradient(45deg, #090 25%, transparent 25%, transparent 75%, #090 75%, #090 100%);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    color: #fff; /* Ensure text is white */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #aaa;
+    position: relative;
+}
+
+.drop-symbol {
+    font-size: 50px;
+    margin-top: 10px;
+    color: #aaa; /* Ensure symbol is visible */
+}
+
+.drop-message {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+.file-item {
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.file-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.file-size {
+    font-size: 14px;
+    color: #888;
+}
+
+.upload-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #23527c;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
